@@ -1,0 +1,74 @@
+Dokumen ini berisi semua latihan untuk pemula. Jika Anda menemukan kesalahan atau bug atau sesuatu yang dapat ditulis dengan lebih baik, silakan hubungi saya. Terima kasih.
+
+== Latihan 001: Menemukan bilangan-bilangan yang habis dibagi 7 tetapi tidak habis dibagi 5
+
+Tulislah sebuah program yang akan menemukan semua bilangan yang habis dibagi 7 tapi bukan kelipatan 5, antara 2000 dan 3200 (keduanya termasuk). Bilangan-bilangan yang diperoleh harus dicetak dalam urutan yang dipisahkan dengan koma pada satu baris.
+
+=== Petunjuk:
+Pertimbangkan untuk menggunakan strconv dan strings.Join
+
+=== Solusi:
+link:001/exercise001.go[]
+
+
+== Latihan 002: Menghitung faktorial
+
+Deskripsi Latihan
+Tulislah sebuah program yang dapat menghitung faktorial dari sebuah bilangan. Hasilnya harus dicetak dalam urutan yang dipisahkan dengan koma pada satu baris.
+
+Misalkan masukan berikut diberikan ke program: `8`
+
+Maka, keluarannya seharusnya adalah: `40320`
+
+=== Petunjuk:
+Dalam hal data input yang diberikan ke pertanyaan, harus diasumsikan sebagai input konsol.
+
+=== Solusi:
+link:002/exercise002.go[]
+
+== Latihan 003 : Membuat peta dengan bilangan kuadrat
+
+Dengan sebuah bilangan integral n yang diberikan, tulislah sebuah program untuk membuat sebuah peta yang berisi (i, i*i) yang merupakan bilangan integral antara 1 dan n (keduanya disertakan), dan kemudian program tersebut akan mencetak peta dengan representasi nilai tersebut
+
+Misalkan masukan berikut diberikan ke program: `8`
+
+Maka, keluarannya seharusnya adalah: `peta [1:1 2:4 3:9 4:16 5:25 6:36 7:49 8:64]`
+
+=== Petunjuk:
+Gunakan `make` untuk peta dan kata kerja `%v` untuk output. 
+
+=== Solusi:
+link:003/exercise003.go[]
+
+
+== Latihan 004 : Membuat sebuah irisan dari string input yang dipisahkan koma
+
+Tulis sebuah program yang menerima sebuah deretan angka-angka yang dipisahkan dengan koma dari konsol dan buatlah sebuah irisan dari angka-angka tersebut. Kembalikan irisan tersebut. 
+
+Misalkan masukan berikut diberikan ke program: `34, 67, 55, 33, 12, 98`.
+
+Maka, keluarannya seharusnya adalah: `[34 67 55 33 12 98]`
+
+=== Petunjuk:
+Dalam hal data input yang diberikan ke pertanyaan, harus diasumsikan sebagai input konsol. paket `strings` memiliki metode split. 
+
+=== Solusi:
+link:004/exercise004.go[]
+
+
+== Latihan 005 : Definisikan sebuah “kelas” (interface) yang memiliki paling tidak dua metode
+
+Buatlah sebuah file terpisah (modul) yang memiliki paling tidak dua metode:
+
+- ReadString: untuk membaca sebuah string dari input konsol
+- PrintString: untuk mengembalikan string dalam huruf besar.
+
+Buat juga file `main.go` yang berfungsi sebagai pemanggilan kelas. 
+
+=== Petunjuk
+- Gunakan `bufio.NewScanner(os.Stdin)` untuk membaca satu baris penuh teks.
+- pengguna `go run .` untuk mengeksekusi dengan mempertimbangkan semua file dalam direktori
+
+=== Solusi:
+link:005/exercise005.go[]
+
